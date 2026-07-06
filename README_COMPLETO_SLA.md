@@ -223,3 +223,31 @@ This improvement is especially relevant from a business perspective because miss
 | Version Control | Git & GitHub |
 
 The project combines business analytics, feature engineering, supervised Machine Learning and interactive deployment to create an end-to-end predictive analytics solution.
+
+---
+
+# Feature Engineering
+
+One of the most important phases of the project was transforming operational ticket information into predictive variables capable of identifying SLA breach risk.
+
+The original dataset contained operational attributes such as:
+
+- Ticket priority
+- Support channel
+- Case category
+- Assignment group
+- Resolution times
+- Opening and closing timestamps
+
+These variables were cleaned, encoded and transformed into machine learning features.
+
+## Main Feature Engineering Tasks
+
+- Removed irrelevant identifiers.
+- Treated missing values.
+- Encoded categorical variables.
+- Converted date and time variables into numerical features.
+- Standardized data structure for model training.
+- Created the target variable (`incumplio_sla`) using business rules.
+
+The resulting dataset provided meaningful operational signals that allowed the model to distinguish between low-risk and high-risk tickets.
