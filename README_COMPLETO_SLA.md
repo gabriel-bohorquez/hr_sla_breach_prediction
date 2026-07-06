@@ -8,20 +8,13 @@
 
 # Predictive Risk Intelligence for HR Operations
 
+*(Aquí colocaremos la imagen principal del proyecto.)*
 
+This project develops a Machine Learning solution capable of predicting Service Level Agreement (SLA) breaches in HR Operations before they occur.
 
+Rather than reacting to delayed cases, the solution helps operational teams identify high-risk tickets early, prioritize interventions and support preventive decision-making through predictive analytics.
 
-
-
-
-
-
-
-
-
-This project predicts HR operational ticket SLA breaches before they occur, enabling HR Operations teams to proactively identify high-risk cases and prioritize intervention.
-
-Instead of reacting to missed SLAs, the solution combines business understanding, feature engineering and Machine Learning to support preventive operational decision-making.
+The project follows an end-to-end analytics workflow, including data preparation, business rule engineering, model comparison, hyperparameter optimization, model interpretation and deployment through an interactive Streamlit application.
 
 ---
 
@@ -29,20 +22,22 @@ Instead of reacting to missed SLAs, the solution combines business understanding
 
 | Category | Detail |
 |----------|---------|
+| Portfolio Suite | HR Operations Intelligence Suite |
+| Module | Predictive Risk Intelligence |
 | Project Type | End-to-End Machine Learning |
-| Industry | HR Operations / People Analytics |
+| Business Domain | HR Operations |
 | Business Problem | Predict SLA breaches before they occur |
-| Dataset | 100,000+ operational tickets |
+| Target Variable | `incumplio_sla` |
 | Machine Learning Task | Binary Classification |
-| Final Model | Random Forest (Optimized) |
-| Target Metric | Recall (High-risk SLA Breaches) |
-| Recall | ~80% |
-| Business Objective | Prevent SLA violations through early intervention |
-| Dashboard | Streamlit |
-| Business Value | Risk Prediction · Operational Prioritization · Decision Support |
+| Final Model | Optimized Random Forest |
+| Model Selection Strategy | Recall-oriented optimization |
+| Recall (Class 1) | 80.19% |
+| Deployment | Streamlit |
+| Business Value | Preventive Operations · Risk Prioritization · Decision Support |
 
 
 ---
+
 
 ## Business Problem
 
