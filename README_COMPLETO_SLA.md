@@ -25,6 +25,25 @@ Instead of reacting to missed SLAs, the solution combines business understanding
 
 ---
 
+# Executive Summary
+
+| Category | Detail |
+|----------|---------|
+| Project Type | End-to-End Machine Learning |
+| Industry | HR Operations / People Analytics |
+| Business Problem | Predict SLA breaches before they occur |
+| Dataset | 100,000+ operational tickets |
+| Machine Learning Task | Binary Classification |
+| Final Model | Random Forest (Optimized) |
+| Target Metric | Recall (High-risk SLA Breaches) |
+| Recall | ~80% |
+| Business Objective | Prevent SLA violations through early intervention |
+| Dashboard | Streamlit |
+| Business Value | Risk Prediction · Operational Prioritization · Decision Support |
+
+
+---
+
 ## 2. Problema de negocio
 
 Los equipos de HR Operations gestionan un alto volumen de casos relacionados con procesos como onboarding, documentación, payroll, beneficios, cambios de datos, accesos internos y consultas de empleados.
