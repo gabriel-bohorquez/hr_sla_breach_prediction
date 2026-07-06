@@ -44,26 +44,19 @@ Instead of reacting to missed SLAs, the solution combines business understanding
 
 ---
 
-## 2. Problema de negocio
+## Business Problem
 
-Los equipos de HR Operations gestionan un alto volumen de casos relacionados con procesos como onboarding, documentación, payroll, beneficios, cambios de datos, accesos internos y consultas de empleados.
+HR Operations teams process thousands of operational requests every day, including onboarding, payroll, employee documentation, benefits administration and HR support cases.
 
-Muchos de estos casos están sujetos a SLA, es decir, tiempos máximos esperados de resolución.
+Many of these requests are governed by Service Level Agreements (SLAs). Missing these deadlines can generate operational bottlenecks, unnecessary escalations, lower employee satisfaction and additional workload for HR teams.
 
-Cuando un caso incumple su SLA, puede generar:
+The challenge is that operational teams often identify SLA risks too late, when the deadline is already close or has already been missed.
 
-- retrasos operativos,
-- escalaciones,
-- pérdida de confianza en el servicio,
-- presión adicional sobre el equipo,
-- peor experiencia del empleado,
-- incumplimiento de KPIs internos.
+### Business Question
 
-El problema principal es que muchas veces los equipos detectan el riesgo demasiado tarde.
+> **Can we identify high-risk HR tickets early enough to prioritize intervention before an SLA breach occurs?**
 
-Por eso, la pregunta de negocio del proyecto es:
-
-> ¿Podemos anticipar qué tickets tienen mayor probabilidad de incumplir su SLA antes de que ocurra?
+This project addresses that question using Machine Learning to estimate the probability of SLA breach before the operational deadline is reached.
 
 ---
 
