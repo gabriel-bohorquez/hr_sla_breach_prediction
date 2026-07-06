@@ -164,4 +164,32 @@ Based on the predicted risk level, HR Operations teams can apply actions such as
 By translating model predictions into operational actions, the solution enables proactive workload management and supports consistent decision-making across HR Operations teams.
 
 ---
+# Model Performance
 
+The final model was an optimized Random Forest classifier selected for its ability to detect high-risk SLA breach cases.
+
+Because the business objective is to identify as many potential SLA breaches as possible, the model was optimized using **Recall for Class 1** rather than overall accuracy.
+
+| Metric | Value |
+|--------|------:|
+| Accuracy | 72.92% |
+| Precision (Class 1 - SLA Breach) | 61.15% |
+| Recall (Class 1 - SLA Breach) | 80.19% |
+| F1-score (Class 1 - SLA Breach) | 69.39% |
+
+## Confusion Matrix
+
+| Actual / Predicted | Predicted: SLA Met | Predicted: SLA Breach |
+|--------------------|-------------------:|----------------------:|
+| Actual: SLA Met | 234 | 108 |
+| Actual: SLA Breach | 42 | 170 |
+
+## Interpretation
+
+The optimized model correctly identified **170 SLA breach cases** and missed **42 breach cases**.
+
+From a business perspective, the most relevant result is the **80.19% recall for SLA breaches**, meaning the model detects approximately 8 out of 10 tickets that actually breach their SLA.
+
+This makes the model useful as an early-warning system for operational prioritization, where missing high-risk cases is more costly than flagging some cases for additional review.
+
+---
