@@ -6,11 +6,13 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
 
+> Part of the **HR Operations Intelligence Suite** — a portfolio of end-to-end analytics solutions designed to optimize, predict and support decision-making across HR Operations.
+
 # Predictive Risk Intelligence for HR Operations
 
-*(Aquí colocaremos la imagen principal del proyecto.)*
+![HR SLA Breach Prediction Dashboard](images/dashboard.png)
 
-This project develops a Machine Learning solution capable of predicting Service Level Agreement (SLA) breaches in HR Operations before they occur.
+This project develops an end-to-end Machine Learning solution that predicts Service Level Agreement (SLA) breaches before they occur, enabling HR Operations teams to proactively identify high-risk operational cases.
 
 Rather than reacting to delayed cases, the solution helps operational teams identify high-risk tickets early, prioritize interventions and support preventive decision-making through predictive analytics.
 
@@ -39,19 +41,66 @@ The project follows an end-to-end analytics workflow, including data preparation
 ---
 
 
-## Business Problem
+# Business Problem
 
-HR Operations teams process thousands of operational requests every day, including onboarding, payroll, employee documentation, benefits administration and HR support cases.
+## Business Context
 
-Many of these requests are governed by Service Level Agreements (SLAs). Missing these deadlines can generate operational bottlenecks, unnecessary escalations, lower employee satisfaction and additional workload for HR teams.
+HR Operations teams process thousands of operational requests every day, including onboarding, payroll, employee data updates, internal access requests and benefits administration. Most of these processes are governed by Service Level Agreements (SLAs) that define the maximum acceptable resolution time for each ticket.
 
-The challenge is that operational teams often identify SLA risks too late, when the deadline is already close or has already been missed.
+Maintaining SLA compliance is essential to ensure operational efficiency, service quality and employee satisfaction.
 
-### Business Question
+---
 
-> **Can we identify high-risk HR tickets early enough to prioritize intervention before an SLA breach occurs?**
+## Operational Challenge
 
-This project addresses that question using Machine Learning to estimate the probability of SLA breach before the operational deadline is reached.
+In high-volume environments, supervisors usually identify potential SLA breaches only after operational delays have already occurred.
+
+This reactive approach often leads to:
+
+- SLA violations and missed service commitments.
+- Escalations from employees and internal stakeholders.
+- Increased operational pressure on HR teams.
+- Reduced employee experience.
+- Lower confidence in HR service delivery.
+- Additional effort to recover delayed cases.
+
+The main challenge is not detecting delayed tickets, but identifying **which active cases are most likely to become delayed before the SLA is breached.**
+
+---
+
+## Business Question
+
+> **Can we proactively identify high-risk operational tickets before they violate their SLA?**
+
+Answering this question would allow HR Operations teams to prioritize resources based on risk instead of reacting after service failures occur.
+
+---
+
+## Why Machine Learning?
+
+Historical operational data contains patterns that traditional rule-based monitoring cannot easily capture.
+
+Machine Learning makes it possible to:
+
+- learn historical risk patterns;
+- estimate the probability of SLA breaches for new tickets;
+- prioritize interventions using predictive evidence;
+- support operational decisions with consistent and scalable risk assessment.
+
+Rather than replacing human judgment, the model acts as an early warning system that helps teams focus attention where it is needed most.
+
+---
+
+## Expected Business Impact
+
+If deployed in a real HR Operations environment, the solution could contribute to:
+
+- Earlier identification of high-risk tickets.
+- Better prioritization of operational workload.
+- Reduction of preventable SLA breaches.
+- More efficient allocation of HR resources.
+- Improved employee service quality.
+- Data-driven operational decision-making.
 
 ---
 
