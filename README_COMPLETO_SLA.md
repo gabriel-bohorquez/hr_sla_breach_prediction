@@ -207,3 +207,19 @@ The optimization process increased the model's ability to detect SLA breach case
 This improvement is especially relevant from a business perspective because missed SLA breach cases represent the highest operational risk.
 
 ---
+# Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Programming Language | Python 3.11 |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Model | Random Forest Classifier |
+| Hyperparameter Tuning | GridSearchCV |
+| Class Imbalance | class_weight="balanced" |
+| Deployment | Streamlit |
+| Development Environment | Jupyter Notebook |
+| Version Control | Git & GitHub |
+
+The project combines business analytics, feature engineering, supervised Machine Learning and interactive deployment to create an end-to-end predictive analytics solution.
