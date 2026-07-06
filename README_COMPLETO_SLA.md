@@ -114,28 +114,23 @@ The final objective is to transform historical operational data into actionable 
 
 ---
 
-## 4. Enfoque analítico
+# Analytical Approach
 
-El proyecto sigue un flujo de trabajo orientado a negocio:
+The project follows an end-to-end workflow designed to connect operational business needs with predictive modeling and decision support.
 
-```text
-Problema de negocio
-↓
-Entendimiento de datos
-↓
-Creación de variable objetivo
-↓
-Preparación del dataset final
-↓
-Entrenamiento de modelos
-↓
-Comparación de modelos
-↓
-Optimización
-↓
-Interpretación
-↓
-Recomendaciones de negocio
+| Stage | Description |
+|------|-------------|
+| Business Understanding | Defined the operational problem: anticipating SLA breaches before they occur. |
+| Data Understanding | Explored the ticket dataset and identified the fields required to model SLA risk. |
+| Data Preparation | Filtered closed tickets, cleaned temporal inconsistencies and prepared the modeling dataset. |
+| Target Engineering | Created the target variable `incumplio_sla` using business rules based on expected SLA thresholds. |
+| Feature Engineering | Prepared categorical and numerical variables for model training. |
+| Model Benchmarking | Compared multiple classification models before selecting the final approach. |
+| Hyperparameter Optimization | Optimized the Random Forest model using recall-oriented tuning. |
+| Model Interpretation | Reviewed feature importance and methodological limitations. |
+| Interactive Deployment | Built a Streamlit application for exploration, prediction and operational recommendations. |
+
+---
 
 
 ## Aplicación Streamlit
