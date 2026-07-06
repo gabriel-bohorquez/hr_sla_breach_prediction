@@ -104,18 +104,13 @@ If deployed in a real HR Operations environment, the solution could contribute t
 
 ---
 
-## 3. Objetivo del proyecto
+# Project Objective
 
-Construir un modelo predictivo capaz de clasificar tickets según su riesgo de incumplimiento SLA.
+The objective of this project is to develop an explainable Machine Learning solution capable of identifying HR operational tickets with the highest probability of violating their Service Level Agreement (SLA).
 
-La variable objetivo del proyecto es:
+Rather than predicting delays as an isolated technical exercise, the model is designed to support operational prioritization by enabling earlier interventions on high-risk cases.
 
-| Variable | Valor | Significado |
-|---|---:|---|
-| `incumplio_sla` | 0 | El ticket cumplió el SLA |
-| `incumplio_sla` | 1 | El ticket incumplió el SLA |
-
-El objetivo operativo es pasar de una gestión reactiva a una gestión preventiva basada en riesgo.
+The final objective is to transform historical operational data into actionable decision support for HR Operations teams.
 
 ---
 
