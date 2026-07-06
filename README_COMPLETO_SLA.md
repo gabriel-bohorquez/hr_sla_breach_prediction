@@ -193,3 +193,17 @@ From a business perspective, the most relevant result is the **80.19% recall for
 This makes the model useful as an early-warning system for operational prioritization, where missing high-risk cases is more costly than flagging some cases for additional review.
 
 ---
+# Model Optimization Results
+
+The baseline Random Forest model was improved through hyperparameter tuning and recall-oriented optimization.
+
+| Model Version | Recall (Class 1 - SLA Breach) |
+|--------------|------------------------------:|
+| Baseline Random Forest | 58.02% |
+| Optimized Random Forest | 80.19% |
+
+The optimization process increased the model's ability to detect SLA breach cases by more than 22 percentage points.
+
+This improvement is especially relevant from a business perspective because missed SLA breach cases represent the highest operational risk.
+
+---
