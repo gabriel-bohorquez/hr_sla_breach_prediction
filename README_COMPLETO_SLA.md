@@ -132,33 +132,21 @@ The project follows an end-to-end workflow designed to connect operational busin
 
 ---
 
+# Machine Learning Strategy
 
-## Aplicación Streamlit
+Several classification algorithms were evaluated before selecting the final model.
 
-El proyecto incluye una aplicación interactiva desarrollada con Streamlit.
+The final solution was optimized for operational risk detection rather than overall accuracy.
 
-La app permite:
+Key design decisions included:
 
-- Explorar el dataset final.
-- Consultar KPIs operativos.
-- Filtrar tickets por prioridad, canal y tipo.
-- Visualizar patrones de incumplimiento SLA.
-- Revisar métricas del modelo final.
-- Simular la predicción de riesgo de incumplimiento SLA para un nuevo ticket.
-- Obtener una recomendación operativa automática.
-- Consultar conclusiones, limitaciones y próximos pasos.
+- Random Forest selected after model benchmarking.
+- Recall used as the primary optimization metric.
+- Hyperparameter tuning performed to maximize high-risk case detection.
+- Class imbalance handled through `class_weight = balanced`.
+- Model evaluation focused on operational usefulness rather than only statistical performance.
 
-### Ejecutar localmente
+This strategy prioritizes identifying as many potential SLA breaches as possible, accepting a limited increase in false positives to reduce missed high-risk operational cases.
 
-Desde la raíz del proyecto:
-
-```bash
-streamlit run app/app.py
-
-La aplicación se abrirá en:
-
-http://localhost:8501
-
-Enlace publico: https://canva.link/mgiyjhi7zm3opox
-
+---
 
