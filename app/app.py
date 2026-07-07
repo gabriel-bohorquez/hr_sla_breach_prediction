@@ -434,8 +434,9 @@ with tab6:
             "El dataset utilizado fue adaptado desde tickets de soporte y todavía no representa directamente datos reales de HR Operations."
         )
         st.warning(
-            "La variable objetivo `incumplio_sla` fue construida mediante una regla de negocio basada en prioridad. "
-            "Por ello, la prioridad aparece como variable muy influyente y debe interpretarse con cautela."
+            "La variable objetivo `incumplio_sla` fue construida mediante una regla de negocio basada parcialmente en la prioridad del ticket. "
+"Como `Ticket Priority` también se utiliza como variable predictora, existe riesgo de circularidad metodológica o target leakage. "
+"Por ello, su importancia debe interpretarse con cautela y validarse en una futura versión con una etiqueta de SLA independiente."
         )
 
     st.markdown("### Próximos pasos priorizados")
