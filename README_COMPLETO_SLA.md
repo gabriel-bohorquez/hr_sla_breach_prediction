@@ -6,11 +6,13 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://hr-sla-breach-prediction.streamlit.app/)
+
 > Part of the **HR Operations Intelligence Suite** — a portfolio of end-to-end analytics solutions designed to optimize, predict and support decision-making across HR Operations.
 
-# Predictive Risk Intelligence for HR Operations
+## Predictive Risk Intelligence for HR Operations
 
-![HR SLA Breach Prediction Dashboard](images/dashboard.png)
+![HR SLA Breach Prediction Dashboard](images/01_home.png)
 
 This project develops an end-to-end Machine Learning solution that predicts Service Level Agreement (SLA) breaches before they occur, enabling HR Operations teams to proactively identify high-risk operational cases.
 
@@ -251,3 +253,131 @@ These variables were cleaned, encoded and transformed into machine learning feat
 - Created the target variable (`incumplio_sla`) using business rules.
 
 The resulting dataset provided meaningful operational signals that allowed the model to distinguish between low-risk and high-risk tickets.
+
+---
+
+# Business Insights
+
+The analysis identified several operational patterns associated with SLA breach risk.
+
+## Key Findings
+
+- High-priority tickets were significantly more likely to breach SLA.
+- Certain operational channels accumulated a larger proportion of delayed cases.
+- Longer waiting times before assignment strongly increased breach probability.
+- Ticket category influenced operational risk more than expected.
+- Historical operational behavior contained enough information to anticipate future SLA breaches.
+
+## Operational Value
+
+These findings allow HR Operations teams to move from reactive incident management to proactive workload prioritization.
+
+Instead of reviewing every active ticket manually, supervisors can focus attention on cases with the highest predicted operational risk.
+
+This approach improves resource allocation while reducing preventable SLA violations.
+
+---
+
+# Project Limitations
+
+Although the model provides useful predictive support, several limitations should be considered:
+
+- The dataset was adapted from support ticket data and does not represent a real HR Operations production system.
+- The target variable `incumplio_sla` was created using business rules, not from an original SLA breach label.
+- The model should be interpreted as a decision-support tool, not as an automatic decision system.
+- Performance should be monitored if deployed in a real operational environment.
+- Additional business variables could improve prediction quality in a production scenario.
+
+---
+# Future Improvements
+
+Potential future improvements include:
+
+- Integrating the model with live HR ticketing systems.
+- Adding SHAP values to improve model explainability.
+- Building a real-time risk scoring pipeline.
+- Monitoring model drift over time.
+- Retraining the model periodically with new operational data.
+- Connecting the app to Power BI or Tableau dashboards.
+- Adding user authentication and role-based access.
+
+---
+
+# Interactive Application
+🔗 **Live Demo:** https://hr-sla-breach-prediction.streamlit.app/
+
+The project includes an interactive Streamlit application that allows users to explore the predictive model from a business perspective.
+
+## Main Features
+
+- Explore the processed dataset.
+- Review operational KPIs.
+- Predict SLA breach risk for new tickets.
+- Analyze model performance.
+- Support operational decision-making.
+- Demonstrate the end-to-end Machine Learning workflow.
+
+
+---
+
+# Streamlit Application Showcase
+
+The Streamlit application was designed as an interactive business-facing layer for exploring operational patterns, understanding model behavior and simulating SLA breach risk in a practical way.
+
+## Home
+
+<p align="center">
+  <img src="images/01_home.png" alt="Home section of the HR SLA Breach Prediction app" width="100%">
+</p>
+
+The home section presents the executive summary of the solution, including filtered KPIs, business context and the main predictive outcome.
+
+---
+
+## Dataset
+
+<p align="center">
+  <img src="images/02_dataset.png" alt="Dataset section of the HR SLA Breach Prediction app" width="100%">
+</p>
+
+This section allows users to inspect the filtered dataset and understand the structure of the operational information used in the predictive workflow.
+
+---
+
+## Exploratory Analysis
+
+<p align="center">
+  <img src="images/03_analysis_top.png" alt="Exploratory analysis section of the HR SLA Breach Prediction app" width="100%">
+</p>
+
+The exploratory analysis section highlights key operational patterns related to SLA compliance, helping users identify how breach behavior varies across priority levels and support channels.
+
+---
+
+## Risk Simulator
+
+<p align="center">
+  <img src="images/04_simulador.png" alt="Risk simulator section of the HR SLA Breach Prediction app" width="100%">
+</p>
+
+The simulator allows users to input ticket characteristics and obtain a predictive assessment of SLA breach risk, supporting operational prioritization and preventive action.
+
+---
+
+## Conclusions
+
+<p align="center">
+  <img src="images/07_conclusions_top.png" alt="Conclusions section of the HR SLA Breach Prediction app" width="100%">
+</p>
+
+The conclusions section summarizes the operational value of the project, reinforcing how predictive analytics can support proactive decision-making in HR Operations.
+
+---
+
+# Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/hr_sla_breach_prediction.git
+cd hr_sla_breach_prediction
+pip install -r requirements.txt
+streamlit run app.py
