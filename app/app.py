@@ -411,7 +411,7 @@ with tab6:
     st.markdown("### Conclusión principal")
     st.success(
         "El modelo Random Forest optimizado permite anticipar una parte relevante de los tickets con riesgo de incumplir SLA. "
-        "Con un recall de 0.8019 para la clase de incumplimiento, detecta aproximadamente 8 de cada 10 tickets que realmente incumplen SLA."
+        "Con un recall del 80.19% para la clase de incumplimiento, detecta aproximadamente 8 de cada 10 tickets que realmente incumplen SLA."
     )
 
     # Dos columnas: valor de negocio y limitaciones
