@@ -377,6 +377,16 @@ The conclusions section summarizes the operational value of the project, reinfor
 ```bash
 git clone https://github.com/gabriel-bohorquez/hr_sla_breach_prediction.git
 cd hr_sla_breach_prediction
-pip install -r requirements.txt
+
+python3 -m venv .venv
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+
 streamlit run app/app.py
 ```
