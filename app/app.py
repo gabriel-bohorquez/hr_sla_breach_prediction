@@ -361,9 +361,9 @@ with tab5:
         with st.expander("Interpretación del resultado"):
             st.write(
                 """
-                El modelo estima el riesgo de incumplimiento SLA a partir de las variables del ticket.
-                Este resultado no debe interpretarse como una decisión automática, sino como una señal
-                de apoyo para priorización operativa.
+                El modelo estima la probabilidad de incumplimiento SLA a partir de las características del ticket.
+                La clasificación final se obtiene aplicando el umbral de decisión definido en el modelo. Por ello, la probabilidad expresa nivel de riesgo, mientras que la etiqueta “Cumple/Incumple SLA” representa una decisión binaria derivada de ese umbral.
+                El resultado debe utilizarse como señal de apoyo para priorización operativa, no como una decisión automática.
                 """
             )
 
