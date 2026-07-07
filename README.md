@@ -247,7 +247,7 @@ These variables were cleaned, encoded and transformed into machine learning feat
 - Removed irrelevant identifiers.
 - Treated missing values.
 - Encoded categorical variables.
-- Converted date and time variables into numerical features.
+- Converted temporal fields to datetime format to calculate resolution duration and engineer the SLA breach target.
 - Standardized data structure for model training.
 - Created the target variable (`incumplio_sla`) using business rules.
 
@@ -263,9 +263,8 @@ The analysis identified several operational patterns associated with SLA breach 
 
 - High-priority tickets were significantly more likely to breach SLA.
 - Certain operational channels accumulated a larger proportion of delayed cases.
-- Longer waiting times before assignment strongly increased breach probability.
-- Ticket category influenced operational risk more than expected.
-- Historical operational behavior contained enough information to anticipate future SLA breaches.
+- Ticket priority was the dominant predictive signal, while ticket type and channel contributed smaller secondary effects.
+- Historical ticket attributes provided sufficient predictive signal to identify patterns associated with SLA breach risk.
 
 ## Operational Value
 
@@ -285,7 +284,7 @@ Although the model provides useful predictive support, several limitations shoul
 - The target variable `incumplio_sla` was created using business rules, not from an original SLA breach label.
 - The model should be interpreted as a decision-support tool, not as an automatic decision system.
 - Performance should be monitored if deployed in a real operational environment.
-- Additional business variables could improve prediction quality in a production scenario.
+- Additional production variables, such as workload, queue age, reassignment history and staffing capacity, could improve predictive performance and operational relevance.
 
 ---
 # Future Improvements
@@ -380,3 +379,4 @@ git clone https://github.com/gabriel-bohorquez/hr_sla_breach_prediction.git
 cd hr_sla_breach_prediction
 pip install -r requirements.txt
 streamlit run app/app.py
+```
