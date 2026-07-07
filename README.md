@@ -376,6 +376,7 @@ The conclusions section summarizes the operational value of the project, reinfor
 
 # Installation
 
+```bash
 git clone https://github.com/gabriel-bohorquez/hr_sla_breach_prediction.git
 cd hr_sla_breach_prediction
 pip install -r requirements.txt
