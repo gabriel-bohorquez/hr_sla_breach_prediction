@@ -307,7 +307,11 @@ with tab5:
     st.markdown("### Ticket simulado")
     st.dataframe(input_ticket, use_container_width=True)
 
-    if st.button("Predecir riesgo de incumplimiento SLA"):
+    if st.button(
+    "Predecir riesgo de incumplimiento SLA",
+    type="primary",
+    use_container_width=True
+):
         result = predict_sla_risk(model, input_ticket)
 
         st.markdown("---")
