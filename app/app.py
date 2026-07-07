@@ -215,10 +215,11 @@ with tab4:
 
     col1, col2, col3, col4 = st.columns(4)
 
-    col1.metric("Accuracy", "0.7292")
-    col2.metric("Precision clase 1", "0.6115")
-    col3.metric("Recall clase 1", "0.8019")
-    col4.metric("F1-score clase 1", "0.6939")
+    
+    col1.metric("Accuracy", "72.92%")
+    col2.metric("Precision clase 1", "61.15%")
+    col3.metric("Recall clase 1", "80.19%")
+    col4.metric("F1-score clase 1", "69.39%")
 
     st.markdown("---")
 
