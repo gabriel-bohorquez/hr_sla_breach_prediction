@@ -237,7 +237,6 @@ The original dataset contained operational attributes such as:
 - Ticket priority
 - Support channel
 - Case category
-- Assignment group
 - Resolution times
 - Opening and closing timestamps
 
