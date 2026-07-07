@@ -150,7 +150,7 @@ with tab2:
 
     st.write("Dataset filtrado según los controles de la barra lateral.")
 
-    st.dataframe(df_filtered, use_container_width=True)
+    st.dataframe(df_filtered, width="stretch")
 
     st.markdown("### Dimensiones del dataset filtrado")
     st.write(f"Filas: {df_filtered.shape[0]}")
@@ -174,18 +174,18 @@ with tab3:
         with col1:
             st.plotly_chart(
                 plot_target_distribution(df_filtered),
-                use_container_width=True
+                width="stretch"
             )
 
         with col2:
             st.plotly_chart(
                 plot_breach_by_priority(df_filtered),
-                use_container_width=True
+                width="stretch"
             )
 
         st.plotly_chart(
             plot_breach_by_channel(df_filtered),
-            use_container_width=True
+            width="stretch"
         )
 
     st.info(
@@ -228,13 +228,13 @@ with tab4:
     with col_a:
         st.plotly_chart(
             plot_model_metrics(),
-            use_container_width=True
+            width="stretch"
         )
 
     with col_b:
         st.plotly_chart(
             plot_feature_importance(),
-            use_container_width=True
+            width="stretch"
         )
 
     st.warning(
@@ -305,12 +305,12 @@ with tab5:
     }])
 
     st.markdown("### Ticket simulado")
-    st.dataframe(input_ticket, use_container_width=True)
+    st.dataframe(input_ticket, width="stretch")
 
     if st.button(
     "Predecir riesgo de incumplimiento SLA",
     type="primary",
-    use_container_width=True
+    width="stretch"
 ):
         result = predict_sla_risk(model, input_ticket)
 
