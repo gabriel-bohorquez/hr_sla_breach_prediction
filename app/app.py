@@ -238,9 +238,10 @@ with tab4:
 
     st.warning(
         """
-        Nota metodológica: la prioridad del ticket aparece como variable muy importante
-        porque el SLA esperado fue definido en función de la prioridad.
-        Esto es coherente operativamente, pero debe interpretarse como una limitación del proyecto.
+        Nota metodológica: la variable objetivo `incumplio_sla` fue construida mediante una regla de negocio basada parcialmente en la prioridad del ticket.
+        Como `Ticket Priority` también se utiliza como variable predictora, existe riesgo de circularidad metodológica o target leakage.
+        Por ello, su importancia debe interpretarse con cautela y validarse en una futura versión con una etiqueta de SLA independiente.
+        
         """
     )
 
