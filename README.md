@@ -390,3 +390,30 @@ python3 -m pip install -r requirements.txt
 
 streamlit run app/app.py
 ```
+
+---
+
+# Credits
+
+Developed by **Gabriel Bohorquez** as an end-to-end Data Analytics and Machine Learning project focused on HR Operations, predictive analytics, and proactive SLA risk prioritization.
+
+The project combines business analysis, exploratory data analysis, machine learning, model interpretation, interactive analytics, and Streamlit deployment to demonstrate a complete end-to-end workflow.
+
+---
+
+# Contact
+
+- 💼 LinkedIn: [linkedin.com/in/eb20](https://www.linkedin.com/in/eb20)
+- ✉️ Email: [gbohorquez2020@gmail.com](mailto:gbohorquez2020@gmail.com)
+- 🚀 Live Demo: [HR SLA Breach Prediction](https://hr-sla-breach-prediction.streamlit.app/)
+- 💻 GitHub: [github.com/gabriel-bohorquez](https://github.com/gabriel-bohorquez)
+
+---
+
+# About this portfolio
+
+This repository is part of my Data Analytics and Machine Learning portfolio, showcasing end-to-end projects that combine business understanding, analytics, predictive modeling, reproducibility, and decision-support solutions.
+
+More projects are available on my GitHub profile.
+
+⭐ If you found this repository useful, consider giving it a star.
